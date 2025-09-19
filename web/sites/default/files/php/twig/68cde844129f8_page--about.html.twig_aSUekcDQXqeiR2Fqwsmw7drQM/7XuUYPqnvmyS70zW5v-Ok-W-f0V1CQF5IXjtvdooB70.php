@@ -1,0 +1,184 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* themes/custom/canvas/templates/page--about.html.twig */
+class __TwigTemplate_47cd7ff6f6acddff27097e9ec7396a78 extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+        $this->sandbox = $this->extensions[SandboxExtension::class];
+        $this->checkSecurity();
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 1
+        yield "<!DOCTYPE html>
+<html lang=\"en\" dir=\"ltr\">
+<head>
+  <meta charset=\"utf-8\">
+  <title>About Canvas</title>
+  <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap\" rel=\"stylesheet\">
+  <link rel=\"stylesheet\" href=\"style.css\">
+</head>
+<body>
+
+  <!-- HERO SECTION FOR ABOUT PAGE -->
+  <div class=\"hero-section\">
+    
+    <!-- Top-left theme name -->
+    <div class=\"hero-box-title\">CANVAS</div>
+
+   <div class=\"hero-buttons\">
+  <a href=\"/\" class=\"hero-circle\" title=\"Home\">&#8962;</a>
+  <a href=\"/contact\" class=\"hero-circle\" title=\"Contact\">&#9993;</a>
+
+  <!-- Search form -->
+  <form class=\"hero-search\" action=\"/search\" method=\"get\">
+    <input type=\"text\" name=\"q\" placeholder=\"Search...\" required>
+    <button type=\"button\" class=\"hero-circle search-toggle\">&#128269;</button>
+  </form>
+</div>
+
+
+    <div class=\"hero-content\">
+      <h2>About Canvas</h2>
+      <p>Clean, modern, and user-friendly digital experiences built for everyone.</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class=\"main\">
+    <!-- About Content -->
+    <div class=\"content\">
+      <h3>Our Mission</h3>
+      <p>At Canvas, we aim to:</p>
+      <ul>
+        <li>Deliver reliable, up-to-date information and resources.</li>
+        <li>Create an intuitive and engaging browsing experience.</li>
+        <li>Foster a community where ideas, knowledge, and creativity are shared openly.</li>
+      </ul>
+
+      <h3>Why Choose Canvas?</h3>
+      <ul>
+        <li><strong>Modern Design:</strong> Clean layouts with visually appealing elements.</li>
+        <li><strong>Responsive & Fast:</strong> Smooth experience across all devices.</li>
+        <li><strong>Trusted Content:</strong> Carefully curated and maintained resources.</li>
+      </ul>
+
+      <h3>Our Team</h3>
+      <p>We are a passionate group of developers, designers, and content creators with expertise in:</p>
+      <ul>
+        <li>Web Development & Drupal Customization</li>
+        <li>UX/UI Design</li>
+        <li>Content Strategy & Digital Marketing</li>
+      </ul>
+
+      <h3>Get in Touch</h3>
+      <p>We love connecting with our community. Reach out via our <a href=\"/contact\">Contact Page</a> for questions, suggestions, or collaboration ideas.</p>
+    </div>
+
+    <!-- Sidebar (optional highlights or quick links) -->
+    <aside class=\"sidebar\">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href=\"/articles\">Our Article</a></li>
+        <li><a href=\"/blog\">Our Blog</a></li>
+        <li><a href=\"/services\">Services</a></li>
+        <li><a href=\"/contact\">Contact Us</a></li>
+      </ul>
+
+      <h4>Follow Us</h4>
+      <div style=\"display:flex; gap:10px;\">
+        <a href=\"#\" class=\"hero-circle\" title=\"Twitter\">&#x1F426;</a>
+        <a href=\"#\" class=\"hero-circle\" title=\"LinkedIn\">&#128100;</a>
+        <a href=\"#\" class=\"hero-circle\" title=\"Facebook\">&#128101;</a>
+      </div>
+    </aside>
+  </main>
+  
+
+</body>
+</html>
+";
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "themes/custom/canvas/templates/page--about.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  44 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("", "themes/custom/canvas/templates/page--about.html.twig", "/app/web/themes/custom/canvas/templates/page--about.html.twig");
+    }
+    
+    public function checkSecurity()
+    {
+        static $tags = [];
+        static $filters = [];
+        static $functions = [];
+
+        try {
+            $this->sandbox->checkSecurity(
+                [],
+                [],
+                [],
+                $this->source
+            );
+        } catch (SecurityError $e) {
+            $e->setSourceContext($this->source);
+
+            if ($e instanceof SecurityNotAllowedTagError && isset($tags[$e->getTagName()])) {
+                $e->setTemplateLine($tags[$e->getTagName()]);
+            } elseif ($e instanceof SecurityNotAllowedFilterError && isset($filters[$e->getFilterName()])) {
+                $e->setTemplateLine($filters[$e->getFilterName()]);
+            } elseif ($e instanceof SecurityNotAllowedFunctionError && isset($functions[$e->getFunctionName()])) {
+                $e->setTemplateLine($functions[$e->getFunctionName()]);
+            }
+
+            throw $e;
+        }
+
+    }
+}

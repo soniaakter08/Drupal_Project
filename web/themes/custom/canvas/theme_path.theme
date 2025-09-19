@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Theme hooks and preprocess functions for my_custom_theme.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function canvas_theme_preprocess_html(array &$variables)
+{
+    // Add a class for the theme.
+    $variables['attributes']['class'][] = 'my-custom-theme';
+
+    // Provide a theme_path variable to Twig templates for static assets.
+    // drupal_get_path returns e.g. "themes/custom/canvas_theme"
+    $variables['theme_path'] = '/' . drupal_get_path('theme', 'canvas_theme');
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function canvas_theme_preprocess_page(array &$variables)
+{
+    if (!empty($variables['page']['navigation'])) {
+        $variables['has_navigation'] = TRUE;
+    }
+}

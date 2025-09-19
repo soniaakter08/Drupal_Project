@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+<div class="hero-section">
+
+  <!-- Top-left theme name -->
+  <div class="hero-box-title">CANVAS</div>
+
+  <!-- Top-right buttons -->
+  <div class="hero-buttons">
+    <a href="/" class="hero-circle" title="Home">&#8962;</a> <!-- Home icon -->
+    <a href="/about" class="hero-circle" title="About">?</a> 
+    <form class="hero-search" action="/search" method="get">
+      <input type="text" name="q" placeholder="Search..." required>
+      <button type="submit" class="hero-circle">&#128269;</button> <!-- Search icon -->
+    </form>
+  </div>
+
+  <div class="hero-content">
+    <h2>Where Ideas Take Shape</h2>
+    <p>Easily turn your ideas into a stunning, fully functional website with style and flexibility.</p>
+  </div>
+</div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="content">
+      {{ page.content }}
+      {{ first_module_variable }}
+    </div>
+
+    {% if page.sidebar %}
+    <aside class="sidebar">
+      {{ page.sidebar }}
+    </aside>
+    {% endif %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    {{ page.footer }}
+  </footer>
+
+</body>
+</html>
