@@ -1,0 +1,6 @@
+name: 'Palindrome Checker'
+type: module
+description: 'A simple module to check if a string is a palindrome.'
+core_version_requirement: ^10 || ^11
+package: olivero
+dependencies: []
