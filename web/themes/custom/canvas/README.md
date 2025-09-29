@@ -10,6 +10,6 @@ canvas_theme — quick install
    drush cr
 5. Screenshot:
 
-- ![Alt text](my-first-drupal10-app/web/themes/custom/canvas/images/home_page.png)
+- ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/themes/custom/canvas/images/home_page.png)
 
-- ![Alt text](my-first-drupal10-app/web/themes/custom/canvas/images/about_page.png)
+- ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/themes/custom/canvas/images/about_page.png)
