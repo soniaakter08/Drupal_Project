@@ -1,6 +1,6 @@
 # Palindrome Checker Module
 
-A simple custom Drupal 10 or 11 module to check if a word or phrase is a palindrome.
+A simple custom Drupal 10 or 11 module to check if a word or phrase is a palindrome or Not.
 
 ---
 
