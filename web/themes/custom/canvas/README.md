@@ -8,7 +8,11 @@ canvas_theme — quick install
    drush config-set system.theme default canvas_theme
 4. Clear cache:
    drush cr
-5. Screenshot:
+5. Visit the page:
+
+- http://my-first-drupal10-app.lndo.site:8000/
+
+6. Screenshot:
 
 ## Home page
 
