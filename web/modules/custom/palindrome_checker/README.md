@@ -1,6 +1,6 @@
 # Palindrome Checker Module
 
-A simple custom Drupal 11 module to check if a word or phrase is a palindrome.
+A simple custom Drupal 10 or 11 module to check if a word or phrase is a palindrome.
 
 ---
 
@@ -39,5 +39,10 @@ A simple custom Drupal 11 module to check if a word or phrase is a palindrome.
 
 ## Screenshot:
 
-- ![Alt text]()
-- ![Alt text]()
+- Palindrome Word
+
+- ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/modules/custom/palindrome_checker/image/palindrome-checker_01.png)
+
+- Not Palindrome Word
+
+- ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/modules/custom/palindrome_checker/image/palindrome-checker_02.png)
