@@ -1,4 +1,4 @@
-/* --- Reset & Base --- */
+
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-/* --- Hero Section --- */
 .hero-section {
   height: 80vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-image.jpg') center/cover no-repeat;
@@ -20,7 +19,6 @@ body {
   padding: 0 20px;
 }
 
-/* Top-right circular buttons */
 .hero-buttons {
   position: absolute;
   top: 20px;
@@ -49,7 +47,6 @@ body {
   background: #13171c;
 }
 
-/* Search input inside hero section (hidden, only button is visible) */
 .hero-search {
   display: flex;
   align-items: center;
@@ -57,10 +54,10 @@ body {
 }
 
 .hero-search input[type="text"] {
-  display: none; /* Hidden, optional if you only want the button */
+  display: none;
 }
 
-/* Hero Content */
+
 .hero-content h2 {
   font-size: 48px;
   margin: 0 0 10px;
@@ -73,13 +70,13 @@ body {
   margin: 0 auto;
   color: white;
 }
-/* Boxed theme name in top-left */
+
 .hero-box-title {
   position: absolute;
-  top: 20px;          /* distance from top */
-  left: 20px;         /* distance from left */
-  background: rgba(255, 221, 87, 0.9); /* golden semi-transparent box */
-  color: #13171c;     /* text inside box */
+  top: 20px;         
+  left: 20px;         
+  background: rgba(255, 221, 87, 0.9); 
+  color: #13171c;
   padding: 12px 20px;
   font-size: 28px;
   font-weight: 900;
@@ -91,7 +88,6 @@ body {
   animation: fadeIn 1s ease forwards;
 }
 
-/* Optional fade-in animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -103,8 +99,6 @@ body {
   }
 }
 
-
-/* --- Main content --- */
 main.main {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +124,6 @@ main.main {
   min-width: 200px;
 }
 
-/* --- Footer --- */
 footer.footer {
   background: #13171c;
   color: #fff;
@@ -140,7 +133,7 @@ footer.footer {
   font-size: 16px;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .hero-content h2 { font-size: 36px; }
   .hero-content p { font-size: 16px; }

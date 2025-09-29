@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Theme hooks and preprocess functions for my_custom_theme.
+ * Theme hooks and preprocess functions for canvas_theme.
  */
 
 /**
@@ -11,7 +11,7 @@
 function canvas_theme_preprocess_html(array &$variables)
 {
     // Add a class for the theme.
-    $variables['attributes']['class'][] = 'my-custom-theme';
+    $variables['attributes']['class'][] = 'canvas_theme';
 
     // Provide a theme_path variable to Twig templates for static assets.
     // drupal_get_path returns e.g. "themes/custom/canvas_theme"
