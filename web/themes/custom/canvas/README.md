@@ -10,6 +10,10 @@ canvas_theme — quick install
    drush cr
 5. Screenshot:
 
+## Home page
+
 - ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/themes/custom/canvas/images/home_page.png)
+
+## About page
 
 - ![Alt text](https://github.com/soniaakter08/Drupal_Project/blob/master/web/themes/custom/canvas/images/about_page.png)
